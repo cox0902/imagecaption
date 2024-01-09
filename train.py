@@ -255,6 +255,7 @@ def validate(val_loader, encoder, decoder, criterion):
             imgs = imgs.to(device)
             caps = caps.to(device)
             caplens = caplens.to(device)
+            allcaps = allcaps.to(device)
 
             # Forward prop.
             if encoder is not None:
